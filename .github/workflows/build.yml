@@ -4,4 +4,3 @@
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-        build-path: 'your-subfolder-name' # Change this to your subfolder if applicable
