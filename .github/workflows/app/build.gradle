@@ -1,15 +1,22 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
-    }
+plugins {
+    id 'com.android.application'
 }
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+
+android {
+    namespace 'com.lavaz.nexus'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.lavaz.nexus"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
     }
 }
